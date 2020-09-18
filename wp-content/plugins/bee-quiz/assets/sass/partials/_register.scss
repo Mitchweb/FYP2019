@@ -1,0 +1,147 @@
+#register-container {
+    .is-removed {
+        display: none;
+    }
+    .no-label {
+        margin-bottom: 4px;
+    }
+    input[type="file"] {
+        display: none;
+    }
+    .form-check {
+        padding-left: 0;
+    }
+    .form-check-label {
+        padding-top: 36px;
+        position: relative;
+        z-index: 20;
+    }
+    input[type="checkbox"] {
+        display: none;
+        &:checked ~ .custom-checkbox {
+            background-color: #28a745;
+            border-color: #28a745;
+            color: #fff;
+            & > i {
+                visibility: visible;
+            }
+        }
+    }
+    .custom-checkbox {
+        background-color: #fff;
+        border: 2px solid $color-button;
+        border-radius: 8px;
+        color: #333;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        resize: both;
+        height: 32px;
+        margin-left: 50%;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+        width: 32px;
+        z-index: 10;
+        & > i {
+            visibility: hidden;
+        }
+    }
+
+}
+
+#register__splash-screen {
+    &.is-hidden {
+        opacity: 1;
+        pointer-events: auto;
+        -webkit-transform: translateY(100%);
+            -ms-transform: translateY(100%);
+                transform: translateY(100%);
+                transition: transform 1s cubic-bezier(0.38, -0.36, 0.83, 0.67);
+    }
+}
+
+#register__progress-bar > li {
+    width: 25%;
+}
+
+#register__form-container {
+    height: calc(100vh - 215px);
+    width: 100%;
+    & > form {
+        height: inherit;
+        margin-bottom: 0;
+        position: relative;
+        width: inherit;
+    }
+    label {
+        display: block;
+        font-family: 'Laila', 'Times New Roman', serif;
+        font-weight: 600;
+        margin-bottom: 0;
+        text-align: center;
+    }
+}
+
+.register__screen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    resize: both;
+    margin-bottom: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    & > .form-group {
+        width: 100%;
+    }
+    &.is-hidden {
+        z-index: 20;
+    }
+    &.is-visible {
+        z-index: 30;
+    }
+}
+
+label#register_organisation_contact_picture_label {
+    font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#register_organisation_address_lookup_group::after {
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+#register_organisation_address_lookup {
+    float: left;
+    margin-bottom: 4px;
+    width: calc(100% - 100px);
+}
+
+#register_organisation_address_lookup_button {
+    float: left;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    padding: 6px 12px;
+    width: 96px;
+}
+
+#idpc_error_message {
+    color: #dc3545;
+    display: block;
+    font-size: 80%;
+    margin-bottom: 0;
+    margin-top: 0.25rem;
+    width: 100%;
+}

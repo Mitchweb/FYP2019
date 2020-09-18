@@ -1,0 +1,69 @@
+label.disabled {
+    color: rgba(51, 51, 51, 0.5);
+}
+
+select.appears-after {
+    width: 100px;
+}
+
+span.answer-id {
+    color: rgba(51, 51, 51, 0.5);
+    padding-left: 4px;
+}
+
+.edit-question-container {
+    padding-bottom: 16px;
+    padding-top: 16px;
+    &::after {
+        clear: both;
+        content: " ";
+        display: table;
+    }
+}
+
+.wp-core-ui .button-update-question {
+    background: rgb(48, 165, 74);
+    border-color: rgb(39, 145, 62);
+    box-shadow: 0 1px 0 rgb(39, 145, 62);
+    color: #fff;
+    float: left;
+    margin-right: 20px;
+    &:hover {
+        background: rgb(49, 175, 77);
+        border-color: rgb(39, 145, 62);
+        box-shadow: 0 1px 0 rgb(39, 145, 62);
+        color: #fff;
+    }
+}
+
+.wp-core-ui .button-delete-question {
+    background: rgb(217, 55, 73);
+    border-color: rgb(191, 45, 62);
+    box-shadow: 0 1px 0 rgb(191, 45, 62);
+    color: #fff;
+    float: left;
+    margin-right: 20px;
+    &:hover {
+        background: rgb(224, 60, 79);
+        border-color: rgb(191, 45, 62);
+        box-shadow: 0 1px 0 rgb(191, 45, 62);
+        color: #fff;
+    }
+    &.button.disabled {
+        background: rgb(224, 60, 79) !important;
+        border-color: rgb(191, 45, 62) !important;
+        box-shadow: none !important;
+        color: rgb(241, 110, 126) !important;
+        cursor: default !important;
+        text-shadow: none !important;
+    }
+}
+
+#add-answer-target {
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+#add-question-target {
+    margin-top: 20px;
+}

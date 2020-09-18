@@ -1,0 +1,102 @@
+header {
+    background-color: $color-bee;
+    color: #333;
+    height: 64px;
+    padding-bottom: $header-footer-spacing;
+    padding-top: $header-footer-spacing;
+    position: relative;
+    z-index: 200;
+}
+.logo-container {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+.logo-container__logo-text {
+    color: #333;
+    font-family: 'Laila', 'Times New Roman', serif;
+    font-size: 24px;
+    text-align: center;
+    & > a {
+        color: #333;
+        text-decoration: none;
+    }
+}
+#header__open-nav-button {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: 5px;
+    text-align: center;
+    width: 40px;
+    & > i {
+        position: relative;
+        top: 5px;
+    }
+}
+#header__nav-container {
+    background-color: $color-bee;
+    color: #333;
+    height: 100vh;
+    padding-bottom: $header-footer-spacing;
+    padding-top: $header-footer-spacing;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 999;
+    &.is-not-visible {
+        transform: translateX(100%);
+        transition: transform 0.3s, visibility 0s 0.3s;
+        visibility: hidden;
+    }
+    &.is-visible {
+        -webkit-transform: translateX(0%);
+            -ms-transform: translateX(0%);
+                transform: translateX(0%);
+        transition: transform 0.3s;
+        visibility: visible;
+    }
+    nav {
+        height: inherit;
+    }
+    ul {
+        font-family: 'Laila', 'Times New Roman', serif;
+        font-size: 24px;
+        list-style-type: none;
+        height: inherit;
+        padding-inline-start: 0;
+    }
+    li {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+        &:first-child {
+            text-align: right;
+        }
+        & > a {
+            color: #333;
+            display: block;
+            &:focus,
+            &:hover,
+            &:active {
+                color: #333;
+                text-decoration: underline;
+            }
+        }
+    }
+    #header__close-nav-button {
+        cursor: pointer;
+        & > i {
+            position: relative;
+            top: 5px;
+        }
+    }
+}

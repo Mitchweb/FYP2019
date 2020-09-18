@@ -1,0 +1,39 @@
+.site-wrapper {
+    font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Laila', 'Times New Roman', serif;
+    font-weight: 600;
+}
+.btn {
+    border-radius: 24px;
+    font-size: 16px;
+    padding: 12px 24px;
+}
+.btn-default {
+    background-color: $color-button;
+    border-color: $color-button;
+    color: #fff;
+    transition: background-color 0.2s, border-color 0.2s;
+    &:focus,
+    &:hover,
+    &:active {
+        background-color: $color-button-hover;
+        box-shadow: none;
+        border-color: $color-button-hover;
+        color: #fff;
+    }
+}
+
+.btn-default.active.focus,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default:active.focus,
+.btn-default:active:focus,
+.btn-default:active:hover {
+    background-color: $color-button-hover;
+    box-shadow: none;
+    border-color: $color-button-hover;
+    color: #fff;
+}

@@ -1,0 +1,37 @@
+$color-bee: #ffe01b;
+$color-button: #007c89;
+$color-button-hover: #1e474e;
+$header-footer-spacing: 12px;
+$section-spacing: 24px;
+
+@mixin hex($width) {
+    background-color: #fff;
+    height: calc(#{$width} / 1.73);
+    margin-bottom: calc(#{$width} / 3.46);
+    margin-top: calc(#{$width} / 3.46);
+    position: relative;
+    width: #{$width};
+    z-index: 10;
+    &::before {
+        border-bottom: calc(#{$width} / 3.46) solid #fff;
+        border-left: calc(#{$width} / 2) solid transparent;
+        border-right: calc(#{$width} / 2) solid transparent;
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: calc(-#{$width} / 3.46);
+        width: 0;
+        z-index: 10;
+    }
+    &::after {
+        border-left: calc(#{$width} / 2) solid transparent;
+        border-right: calc(#{$width} / 2) solid transparent;
+        border-top: calc(#{$width} / 3.46) solid #fff;
+        content: " ";
+        height: 0;
+        position: absolute;
+        bottom: calc(-#{$width} / 3.46);
+        width: 0;
+        z-index: 10;
+    }
+}

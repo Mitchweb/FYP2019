@@ -1,0 +1,85 @@
+@media only screen and (min-width:992px) {
+    .site-wrapper {
+        font-size: 18px;
+    }
+    .header__container {
+        position: relative;
+    }
+    .home-hero {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+    .home-hero__heading {
+        font-size: 3.5rem;
+        max-width: 600px;
+    }
+    .home-hero__subheading {
+        font-size: 25px;
+        max-width: 600px;
+    }
+    .btn {
+        border-radius: 36px;
+        font-size: 18px;
+        padding: 18px 36px;
+    }
+    .home-info {
+        padding-bottom: 48px;
+        padding-top: 48px;
+        text-align: center;
+    }
+    .home-cards {
+        height: 394px;
+        padding-bottom: 48px;
+        padding-top: 0;
+    }
+    .home-cards__container {
+        position: relative;
+    }
+    .home-cards__card {
+        @include hex(400px);
+    }
+    .home-cards__card-students {
+        background-color: $color-bee;
+        &::before {
+            border-bottom-color: $color-bee;
+        }
+        &::after {
+            border-top-color: $color-bee;
+            
+        }
+    }
+    .home-cards__card-organisations {
+        background-color: #333;
+        color: #fff;
+        position: absolute;
+        right: 0;
+        top: calc(-400px / 3.46);
+        &::before {
+            border-bottom-color: #333;
+        }
+        &::after {
+            border-top-color: #333;
+        }
+    }
+    .home-cards__card__text-container {
+        padding: 20px;
+        position: relative;
+        text-align: center;
+        width: inherit;
+        z-index: 20;
+    }
+    .home-cards__card__text-container__title {
+        margin-top: 0;
+    }
+    .home-cards__card__text-container__button {
+        margin-top: 8px;
+    }
+    #quiz__question {
+        max-width: 600px;
+    }
+    .register__screen {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
+    }
+}

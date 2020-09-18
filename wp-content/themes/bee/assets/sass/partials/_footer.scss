@@ -1,0 +1,37 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    height: 74px;
+    padding-bottom: $header-footer-spacing;
+    padding-top: $header-footer-spacing;
+    position: relative;
+    text-align: center;
+    z-index: 200;
+    ul {
+        list-style-type: none;
+        margin-bottom: 8px;
+        padding-inline-start: 0;
+    }
+    li {
+        display: inline-block;
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+        & > a {
+            color: #fff;
+            display: block;
+            &:focus,
+            &:hover,
+            &:active {
+                color: #fff;
+                text-decoration: underline;
+            }
+        }
+    }
+    p {
+        color: #999;
+        margin-bottom: 0;
+    }
+}

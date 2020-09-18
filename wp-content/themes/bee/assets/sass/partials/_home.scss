@@ -1,0 +1,69 @@
+.home-hero {
+    background-color: $color-bee;
+    padding-bottom: $section-spacing;
+    padding-top: $section-spacing;
+}
+
+.home-hero__heading {
+    font-size: 2.4rem;
+    margin-bottom: $section-spacing;
+}
+
+.home-hero__subheading {
+    font-size: 20px;
+    margin-bottom: $section-spacing;
+}
+
+.home-cards {
+    height: 743px;
+    padding-bottom: $section-spacing;
+    padding-top: $section-spacing;
+}
+
+.home-cards__card {
+    @include hex(290px);
+}
+
+.home-cards__card-students {
+    background-color: $color-bee;
+    margin-bottom: calc(290px / 1.73 + 24px);
+    &::before {
+        border-bottom-color: $color-bee;
+    }
+    &::after {
+        border-top-color: $color-bee;
+        
+    }
+}
+
+.home-cards__card-organisations {
+    background-color: #333;
+    color: #fff;
+    &::before {
+        border-bottom-color: #333;
+    }
+    &::after {
+        border-top-color: #333;
+    }
+}
+
+.home-cards__card__text-container {
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    width: inherit;
+    z-index: 20;
+}
+
+.home-cards__card__text-container__title {
+    margin-top: 0;
+}
+
+.home-cards__card__text-container__button {
+    margin-top: 8px;
+}
+
+.home-info {
+    padding-bottom: $section-spacing;
+    padding-top: $section-spacing;
+}
